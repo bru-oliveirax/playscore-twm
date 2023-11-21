@@ -1,4 +1,4 @@
-import logo from "../../../assets/playstore_logo.png"
+import logo from "../assets/playstore_logo.png"
 
 
 function Header() {

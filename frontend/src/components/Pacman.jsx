@@ -1,5 +1,5 @@
 import PacmanLoader from 'react-spinners/PacmanLoader'
-import loading from '../StartPage'
+import loading from '../views/StartPage'
 
 
 function Pacman() {
