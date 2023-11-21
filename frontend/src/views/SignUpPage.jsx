@@ -12,26 +12,22 @@ const SignUp = () => {
   const handleSignUp = (e) => {
     e.preventDefault();
 
-    // Lógica de cadastro aqui...
+    // Alterar a lógica aqui -------------------------------------------------------------
     if (name !== '' && email !== '' && password !== '' && password === confirmPassword) {
       navigate('/');
     } else {
-      alert('Preencha todos os campos corretamente para se cadastrar.');
+      alert('Preencha todos os campos!');
     }
   };
-
-  const formContainerStyle = {
-    marginTop: '15px', // Ajuste a margem superior do contêiner do formulário
-  };
+  // -------------------------------------------------------------------------------------
 
   const inputStyle = {
-    border: '1px solid #fff',
+    border: 'none',
     backgroundColor: '#232b3d',
     padding: '10px',
     borderRadius: '5px',
     marginBottom: '15px',
     width: '80%',
-    border: 'none',
     outline: 'none',
     color: '#A9A9A9',
   };

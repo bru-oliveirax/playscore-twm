@@ -71,8 +71,25 @@
   max-width: 350px;
 }
 
-
-
 /* login page   ----------------------------------------------------------*/
+.input-style {
+  border: 1px solid #fff;
+  background-color: #232b3d;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 80%;
+  outline: none;
+  color: #A9A9A9;
+}
+
 /* sign up page ----------------------------------------------------------*/
+
+/* error page   ----------------------------------------------------------*/
+.img-error {
+  width: 400px;
+  height: auto;
+  margin-top: 30px;
+  border-radius: 5px;
+}
 

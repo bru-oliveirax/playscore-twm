@@ -11,16 +11,16 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // Alterar a lógica de autenticação aqui...
+    // Alterar a lógica aqui -------------------------------------------------------------
     if (email === 'user@example.com' && password === 'password') {
       navigate('/');
     } else {
       alert('Credenciais inválidas');
     }
   };
+  // -------------------------------------------------------------------------------------
 
   const inputStyle = {
-    border: '1px solid #fff',
     backgroundColor: '#232b3d', 
     padding: '10px', 
     borderRadius: '5px', 
