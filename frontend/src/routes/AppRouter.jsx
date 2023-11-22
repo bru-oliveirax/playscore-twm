@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Error, Start, Login, SignUp } from '../views/index';
 
+
 const AppRouter = () => {
   return (
       <Router>

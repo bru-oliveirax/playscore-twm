@@ -71,19 +71,36 @@
   max-width: 350px;
 }
 
+
 /* login page   ----------------------------------------------------------*/
-.input-style {
-  border: 1px solid #fff;
-  background-color: #232b3d;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 15px;
-  width: 80%;
-  outline: none;
-  color: #A9A9A9;
+.real-login-button-style {
+  position: fixed;
+  bottom: calc(50vh - 150px);
+  left: calc(50vw - 272px); 
+  font-family: 'CodeDC-Pro', sans-serif;
+  background: linear-gradient(to right, #412583, #412583);
+  font-weight: bold;
+  color: #fff;
+  width: 433px;
+  height: 50px;
+  z-index: 999;
 }
 
+
 /* sign up page ----------------------------------------------------------*/
+.sign-up-button-style {
+  position: fixed;
+  bottom: calc(50vh - 265px);
+  left: calc(50vw - 274px); 
+  font-family: 'CodeDC-Pro', sans-serif;
+  background: linear-gradient(to right, #412583, #412583);
+  font-weight: bold;
+  color: #fff;
+  width: 438px;
+  height: 50px;
+  z-index: 999;
+}
+
 
 /* error page   ----------------------------------------------------------*/
 .img-error {

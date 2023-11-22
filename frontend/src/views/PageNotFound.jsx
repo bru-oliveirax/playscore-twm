@@ -1,5 +1,6 @@
 import errorImage from '../assets/error-image.jpg';
 
+
 const Error = () => {
     return (
         <div style={{ margin: '50px auto', textAlign: 'center' }}>

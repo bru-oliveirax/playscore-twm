@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Header } from '../components/index';
 
+
 const SignUp = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -35,7 +36,7 @@ const SignUp = () => {
   return (
     <div>
       <Header />
-      <div className="container mt-2" style={{ marginTop: '20px' }}>
+      <div className="container mt-0" style={{ marginTop: '20px' }}>
         <div className="row justify-content-center">
           <div className="col-md-6">
             <h2 className="mb-4">Crie uma conta</h2>
@@ -88,7 +89,7 @@ const SignUp = () => {
                   style={inputStyle}
                 />
               </div>
-              <button type="submit" className="btn btn-primary" style={{ width: '80%' }}>Cadastrar</button>
+              <button type="submit" className="btn btn-primary border-0 outline-0 sign-up-button-style">Cadastrar</button>
             </form>
           </div>
         </div>

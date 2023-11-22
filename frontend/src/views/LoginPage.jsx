@@ -63,7 +63,7 @@ const Login = () => {
                   style={inputStyle}
                 />
               </div>
-              <button type="submit" className="btn btn-primary" style={{ width: '80%' }}>Login</button>
+              <button type="submit" className="btn btn-primary border-0 outline-0 real-login-button-style">Login</button>
             </form>
           </div>
         </div>
