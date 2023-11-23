@@ -42,7 +42,7 @@ const SignUp = () => {
             <h2 className="mb-4">Crie uma conta</h2>
             <form onSubmit={handleSignUp}>
               <div className="mb-3">
-                <label htmlFor="name" className="form-label">Nome:</label>
+                <label htmlFor="name" className="form-label">Nome de usuário:</label>
                 <input
                   type="text"
                   id="name"
