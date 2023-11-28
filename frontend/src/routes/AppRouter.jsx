@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Error, Start, Login, SignUp } from '../views/index';
+import { Error, Start, Login, SignUp, Home, Game} from '../views/index';
 
 
 const AppRouter = () => {
@@ -9,7 +9,9 @@ const AppRouter = () => {
             <Route path = "/" element = { <Start /> } />
             <Route path = "/error" element = { <Error /> } />
             <Route path = "/login" element = { <Login /> } />
-            <Route path = '/sign-up' element = {<SignUp />}/>
+            <Route path = '/sign-up' element = {<SignUp />} />
+            <Route path = '/home' element = {<Home />} />
+            <Route path = '/game' element = {<Game />} />
             <Route path = "*" element = { <Error />} />
          </Routes>
       </Router>
