@@ -17,7 +17,7 @@ const Home = () => {
         loading ?
             <Pacman />
             :
-            <div className='App'>
+            <div className='App' style={{ overflowY: 'auto' }}>
 
                 <Header />
                 <div class="container-sm">
