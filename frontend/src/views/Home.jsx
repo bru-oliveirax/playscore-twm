@@ -21,95 +21,96 @@ const Home = () => {
 
                 <Header />
                 <div class="container-sm">
-                    <div class='container text-center 0'>
-                        <div class="row align-items-center">
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            </form>
-                        </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categoria
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Role-playing (RPG)</a></li>
+                            <li><a class="dropdown-item" href="#">Adventure</a></li>
+                            <li><a class="dropdown-item" href="#">Platform</a></li>
+                            <li><a class="dropdown-item" href="#">First Person Shooter (FPS)</a></li>
+                            <li><a class="dropdown-item" href="#">Multiplayer Online Battle Arena (MOBA)</a></li>
+                        </ul>
                     </div>
 
                     <br />
-                    <br />
-                    
-                    <div class="container text-center 1">
-                        <div class="row align-items-center">
 
-                            <div class="col">
-                                <div class="card h-100">
-                                    <img src={require("../images/SMW.jpg")} class="card-img-top" alt="..." />
-                                    <div class="card-body">
-                                        <h4 class="card-title">SUPER MARIO WONDER</h4>
-                                        <h4 class="card-score">4.5 ★</h4>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="row align-items-center">
 
-                            <div class="col">
-                                <div class="card h-100">
-                                    <img src={require("../images/diablo4.jpg")} class="card-img-top" alt="..." />
-                                    <div class="card-body">
-                                        <h4 class="card-title">DIABLO IV</h4>
-                                        <h4 class="card-score">4.9 ★</h4>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="card h-100">
-                                    <img src={require("../images/ItTakesTwo.jpg")} class="card-img-top" alt="..." />
-                                    <div class="card-body">
-                                        <h4 class="card-title">IT TAKES TWO</h4>
-                                        <h4 class="card-score">4.7 ★</h4>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src={require("../images/SMW.jpg")} class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h4 class="card-title">SUPER MARIO WONDER</h4>
+                                    <h4 class="card-score">4.5 ★</h4>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <br />
-                    <br />
-                    <div class="container text-center 2">
-                        <div class="row align-items-center">
 
-                            <div class="col">
-                                <div class="card h-100">
-                                    <img src={require("../images/SMW.jpg")} class="card-img-top" alt="..." />
-                                    <div class="card-body">
-                                        <h4 class="card-title">SUPER MARIO WONDER</h4>
-                                        <h4 class="card-title">4.5 ★</h4>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src={require("../images/diablo4.jpg")} class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h4 class="card-title">DIABLO IV</h4>
+                                    <h4 class="card-score">4.9 ★</h4>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="col">
-                                <div class="card h-100">
-                                    <img src={require("../images/diablo4.jpg")} class="card-img-top" alt="..." />
-                                    <div class="card-body">
-                                        <h4 class="card-title">DIABLO IV</h4>
-                                        <h4 class="card-title">4.9 ★</h4>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="card h-100">
-                                    <img src={require("../images/ItTakesTwo.jpg")} class="card-img-top" alt="..." />
-                                    <div class="card-body">
-                                        <h4 class="card-title">IT TAKES TWO</h4>
-                                        <h4 class="card-title">4.7 ★</h4>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src={require("../images/ItTakesTwo.jpg")} class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h4 class="card-title">IT TAKES TWO</h4>
+                                    <h4 class="card-score">4.7 ★</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                <br />
+
+                <div class="container text-center 2">
+                    <div class="row align-items-center">
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src={require("../images/SMW.jpg")} class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h4 class="card-title">SUPER MARIO WONDER</h4>
+                                    <h4 class="card-title">4.5 ★</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src={require("../images/diablo4.jpg")} class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h4 class="card-title">DIABLO IV</h4>
+                                    <h4 class="card-title">4.9 ★</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src={require("../images/ItTakesTwo.jpg")} class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h4 class="card-title">IT TAKES TWO</h4>
+                                    <h4 class="card-title">4.7 ★</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                </div>
             </div>
+            
+
     );
 };
 export default Home;
