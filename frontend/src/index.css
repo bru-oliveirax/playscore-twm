@@ -110,3 +110,6 @@
   border-radius: 5px;
 }
 
+.page-link {
+  color: black; /* ou a cor desejada */
+}

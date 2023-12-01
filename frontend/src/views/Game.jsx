@@ -30,9 +30,9 @@ const Game = () => {
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h2 class="card-title">Mass Effect Trilogy</h2>
-                                    <br />
                                     <p class="card-text" style={{textAlign: 'justify'}}>Embark on a spacefaring adventure across the galaxy as Commander Shepard. Your choices shape the destiny of the universe in this epic trilogy, blending gripping narrative, intense combat, and meaningful decisions.</p>
                                     <h5 class="card-title">Category: Role-playing (RPG), Adventure</h5>
+                                    <h5 class="card-title">Developer: BioWare</h5>
                                     <br />
                                     <div class="col-md-2">
                                         <input type="text" class="form-control" placeholder="Nota" aria-label="Nota"/>

@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { Header, Pacman } from '../components/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
+import { Dropdown } from 'react-bootstrap';
 
 const Home = () => {
   const [loading, setLoading] = useState(false);
@@ -26,7 +26,7 @@ const Home = () => {
           <br />
           <br />
           <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Choose your category
             </button>
             <ul class="dropdown-menu">
@@ -71,9 +71,69 @@ const Home = () => {
               </div>
             </div>
           </div>
+
+          <br />
+
+          <div class="row align-items-center">
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/4.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h4 class="card-title">Sekiro: Shadows Die Twice</h4>
+                  <h5 class="card-title">4.7 ★</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/5.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h4 class="card-title">Ghost of Tsushima</h4>
+                  <h5 class="card-title">4.5 ★</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/6.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h4 class="card-title">Super Mario World</h4>
+                  <h5 class="card-title">4.5 ★</h5>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <br />
         <br />
+
+        <div className="container d-flex justify-content-center pagination-container">
+          <nav aria-label="Page navigation">
+            <ul className="pagination">
+              <li className="page-item">
+                <a className="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li className="page-item"><a className="page-link" href="#">1</a></li>
+              <li className="page-item"><a className="page-link" href="#">2</a></li>
+              <li className="page-item"><a className="page-link" href="#">3</a></li>
+              <li className="page-item">
+                <a className="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <br />
+
+        <div class="container text-center">
+          <p><a class="link-opacity-25-hover" href="#" style={{ color: 'white' }}>Logout</a></p>
+        </div>
       </div>
   );
 };

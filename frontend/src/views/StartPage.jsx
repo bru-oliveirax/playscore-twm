@@ -41,7 +41,7 @@ const Start = () => {
                 </button>
             </div>
             <p className='sign-up-text-style' onClick={handleTextClick}>
-                Não tenho conta. Cadastrar agora!
+                Não tem conta? Faça seu cadastro!
             </p>
           </div>
           <div style={{ position: 'relative', height: '100vh' }}>
