@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { Header, Pacman } from '../components/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
