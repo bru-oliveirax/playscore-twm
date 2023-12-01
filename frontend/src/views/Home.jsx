@@ -3,24 +3,30 @@ import axios from 'axios';
 import { Header, Pacman } from '../components/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Home = () => {
-  const [loading, setLoading] = useState(true);
-  const [data, setData] = useState([]);
+const Home = (props) => {
+  const [loading, setLoading] = useState(false);
+  const [title, setTitle]             = useState('');
+  const [imageURL, setImageURL]       = useState('');
+  const [total_score, setTotal_score] = useState(0);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/games")
-      .then((response) => {
-        setData(response.data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error('Erro ao obter dados:', error);
-        setLoading(false);
-      });
+    game(games);
   }, []);
 
+const game = async (games) => {
+  console.log(games);
+  axios.get(("http://127.0.0.1:8000/games")).then((response) =>{
+    console.log(response.data);
+    setTitle(response.data.title);
+    setImageURL(response.data.imageURL);
+    setTotal_score(response.data.total_score);
+  })
+  
+};
+
+
   return (
-    <div className='App' style={{ overflowY: 'auto' }}>
+    <div className='App' style={{overflowY: 'auto'}}>
       {loading ? <Pacman /> : (
         <>
           <Header />
@@ -41,13 +47,13 @@ const Home = () => {
             <br />
 
             <div className="row row-cols-1 row-cols-md-3 g-4">
-              {data.map((games) => (
-                <div key={games.id} className="col">
+              {games.map((game) => (
+                <div key={game.title} className="col">
                   <div className="card h-100">
-                    <img src={require(`../images/${games.image}`)} className="card-img-top" alt={games.title} />
+                    <img src={game.imageURL} alt={game.title} />
                     <div className="card-body">
-                      <h4 className="card-title">{games.title}</h4>
-                      <h4 className="card-score">{games.score} ★</h4>
+                      <h4 className="card-title">{game.title}</h4>
+                      <h4 className="card-score">{game.total_score} ★</h4>
                     </div>
                   </div>
                 </div>
@@ -56,14 +62,6 @@ const Home = () => {
           </div>
 
           <br />
-
-          <div className="container text-center">
-            <div className="row row-cols-1 row-cols-md-3 g-4">
-              {/* Renderize mais cards ou outras seções, se necessário */}
-            </div>
-            <br />
-            <br />
-          </div>
         </>
       )}
     </div>

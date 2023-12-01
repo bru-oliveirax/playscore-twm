@@ -7,11 +7,11 @@ import psycopg2
 app = FastAPI()
 
 conn = psycopg2.connect(
-    host="172.28.32.1",
+    host="localhost",
     port=5432,
     user="postgres",
-    password="Aranet1505.",
-    database="PlayScore_db"
+    password="karol123",
+    database="playscore_db"
 )
 
 
