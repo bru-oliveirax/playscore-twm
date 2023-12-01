@@ -25,13 +25,18 @@ const Game = () => {
                     <div class="card mb-3" style={{background:'#101728'}}>
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src={require("../images/SMW.jpg")} class="img-fluid rounded-start" alt="..." />
+                                <img src=  'https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/1.png' alt="..." />
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h2 class="card-title">Super Mário Wonder</h2>
-                                    <p class="card-text" style={{textAlign: 'justify'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    <h3 class="card-score">Nota: 4.5/5.0</h3>
+                                    <h2 class="card-title">Mass Effect Trilogy</h2>
+                                    <br />
+                                    <p class="card-text" style={{textAlign: 'justify'}}>Embark on a spacefaring adventure across the galaxy as Commander Shepard. Your choices shape the destiny of the universe in this epic trilogy, blending gripping narrative, intense combat, and meaningful decisions.</p>
+                                    <h5 class="card-title">Category: Role-playing (RPG), Adventure</h5>
+                                    <br />
+                                    <div class="col-md-2">
+                                        <input type="text" class="form-control" placeholder="Nota" aria-label="Nota"/>
+                                    </div>
                                     <br />
                                     <button type="button" class="btn btn-dark" style={{background:'#412583'}}>Avalie o jogo!</button>
                                     
